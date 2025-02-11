@@ -22,7 +22,7 @@ unsigned long fibonacci(int nb, unsigned long *array)
     if (nb == 1)
         return 1;
     if (array[nb] == 0)
-        array[nb] = fibonacci(nb - 1, array) + fibonacci(nb - 2, array);
+        array[nb] = fibonacci(nb - 2, array) + fibonacci(nb - 1, array);
     return array[nb];
 }
 
